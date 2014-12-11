@@ -1,4 +1,16 @@
+$(document).ready(function() {
+	
+	$.each(json, function(idx, value) {
+		$('ul.data-list').append('<li class="ui-li-has-alt ui-li-has-thumb" ><a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn list-item">' +
+    	'<img src="'+value.photo+'" />' +
+    	'<h2>'+value.title+'</h2>' +
+    	'<p>'+value.tagName+'</p></a></li>');
+	});
+    
+});
+
 //TEST CODE:
+/*
 var getFiles =	function(){
 		
 		//CREATE A DIRECTORY RECURSEVLY
@@ -12,3 +24,4 @@ var getFiles =	function(){
 
 navigator.splashscreen.hide();
 document.addEventListener('deviceready', getFiles, false);
+*/

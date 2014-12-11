@@ -266,3 +266,14 @@ body
 .left{
 	text-align: left;
 }
+
+.rwl-free-body ul.data-list li a img{
+	height: 5em !important;
+ 	width: 8.875em !important;
+	max-height: 11em  !important;
+	max-width: 8.875em !important;
+}
+
+.rwl-free-body ul.data-list li a.list-item{
+	padding-left: 10.25em !important;
+}

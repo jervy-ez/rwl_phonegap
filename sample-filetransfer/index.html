@@ -4,44 +4,61 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="format-detection" content="telephone=no" />
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-		
-        <link rel="stylesheet"  href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-        
-        <link href="styles/main.css" rel="stylesheet" type="text/css" />
+		        
+        <script rel="stylesheet" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script rel="stylesheet" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="cordova.js"></script>
+        
+        <script type="text/javascript" src="js/file_management.js"></script> 
+        <script src="data/workouts/js.js"></script>      
+        <script type="text/javascript" src="js/main.js"></script>
+                
+        <link rel="stylesheet" type="text/css" href="styles/template.min.css" />
+        <link rel="stylesheet" type="text/css" href="styles/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" type="text/css" href="styles/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="styles/main.css"  />
 <!--        
 		<script type="text/javascript" src="js/index.js"></script>
 -->
-        <script type="text/javascript" src="js/file_management.js"></script>       
-        <script type="text/javascript" src="js/main.js"></script>
-		<title>File Transfer</title>
+		<title>Results With Lucy</title>
 	</head>
+<body>
+    
+<div data-role="page" class="rwl-free-body" id="panel-fixed-page1" data-title="RWL Free v1">
 
-	<body>
-		<header class="header">
-			<h1>File Transfer</h1>
-		</header>
-		<div class="content">
-			<div class="action-area ch30">
-				<button class="button dh" id="download">Download</button>
-				<button class="button dh" id="upload">Upload</button>
-			</div>
-			<div class="result-area ch70">
-				<div class="results">
-					<div id="result" class="desc">
-						<ul class="left">
-							<li>Clicking the Dowload button downloads an image from the AppBuilder site and saves it on the device.</li>
-							<li>Clicking the Upload button allows you to pick an image and upload it to http://www.filedropper.com/.</li>
-						</ul>
-					</div>
-					<img id="downloadedImage"/>
-				</div>
-				<div class="separator"></div>
-			</div>
-		</div>
-		<footer class="footer">
-			<div>Cordova API Samples</div>
-		</footer>
-	</body>
+    <div data-role="header" data-position="fixed">
+        <h1>RWL Free v1</h1>
+    </div><!-- /header -->
+
+   
+
+    <div data-role="navbar" data-grid="c">
+        <ul>
+            <li><a href="index.html" class="ui-btn-active">Workouts</a></li>
+            <li><a href="playlist.html">Playlist</a></li>
+            <li><a href="realresults.html">RealResults</a></li>
+            <li><a href="eatwell.html">EatWell</a></li>
+        </ul>
+    </div><!-- /navbar -->
+
+    <div role="main" class="ui-content jqm-content jqm-fullwidth">
+
+     <ul data-role="listview" data-split-icon="gear" data-split-theme="a" data-inset="true" class="data-list"></ul>
+    <div data-role="popup" id="purchase" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">
+        <h3>Purchase Album?</h3>
+        <p>Your download will begin immediately on your mobile device when you purchase.</p>
+        <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini">Buy: $10.99</a>
+        <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">Cancel</a>
+    </div>
+
+
+    </div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+        <h4>RWL Free &copy; 2014</h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+	
+        
+</body>
 </html>
