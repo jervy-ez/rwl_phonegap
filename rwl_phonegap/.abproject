@@ -1,8 +1,8 @@
 {
   "ProjectGuid": "8e41db67-fdfa-4ee8-8bf8-62100c2dd8b7",
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
-  "AppIdentifier": "com.telerik.samplefiletransfer",
-  "ProjectName": "sample-filetransfer",
+  "AppIdentifier": "com.rwl.phonegap",
+  "ProjectName": "rwl_phonegap",
   "IsRunnable": "true",
   "AndroidPermissions": [
     "android.permission.ACCESS_COARSE_LOCATION",
@@ -21,8 +21,7 @@
     "android.permission.WRITE_EXTERNAL_STORAGE"
   ],
   "DeviceOrientations": [
-    "Portrait",
-    "Landscape"
+    "Portrait"
   ],
   "iOSStatusBarStyle": "Default",
   "BundleVersion": "1.0",
@@ -43,14 +42,14 @@
     "org.apache.cordova.inappbrowser",
     "org.apache.cordova.splashscreen"
   ],
-  "DisplayName": "",
+  "DisplayName": "RWL Phonegap",
   "WP8SupportedResolutions": [
     "ID_RESOLUTION_WVGA",
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
   ],
   "Author": "",
-  "Description": "sample-filetransfer",
+  "Description": "rwl-phonegap",
   "Framework": "Cordova",
   "WP8TileTitle": "",
   "WP8ProductID": "{8e41db67-fdfa-4ee8-8bf8-62100c2dd8b7}",
