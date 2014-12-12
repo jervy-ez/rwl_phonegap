@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+		        
+        <script rel="stylesheet" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script rel="stylesheet" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
+        
+        <script type="text/javascript" src="js/file_management.js"></script> 
+        <script src="data/workouts/js.js"></script>      
+        <script type="text/javascript" src="js/main.js"></script>
+                
+        <link rel="stylesheet" type="text/css" href="styles/template.min.css" />
+        <link rel="stylesheet" type="text/css" href="styles/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" type="text/css" href="styles/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="styles/main.css"  />
+<!--        
+		<script type="text/javascript" src="js/index.js"></script>
+-->
+		<title>Results With Lucy</title>
+	</head>
+<body>
+    
+<div data-role="page" class="rwl-free-body" id="workouts" data-title="Results With Lucy">
+
+   <div data-role="header" data-position="fixed" class="header">       
+        <div class="logo">
+            <a href="index.html">            
+                <img src="styles/img/logo-dark.svg">
+            </a>
+        </div>
+        <a href="#nav-panel" data-icon="bars" data-iconpos="notext" class="head-bttns">Menu</a>
+    </div><!-- /header -->
+    <div class="page-title">
+        <p>Workouts</p>
+    </div><!-- /page-title -->
+
+    <div role="main" class="ui-content jqm-content jqm-fullwidth">
+
+    <div class="data-list"></div>
+
+    <div data-role="popup" id="purchase" data-theme="a" data-overlay-theme="b" class="ui-content text-center" style="max-width:340px; padding-bottom:2em;">
+        <h3>Restricted Access</h3>
+        <p>Your need to sign-up to a plan for you to access this workout.</p>
+        <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini"><img src="styles/images/icons-png/lock-black.png"> Gain Access</a>
+    </div>
+
+
+    </div><!-- /content -->
+
+    <div data-role="panel" data-position-fixed="true" data-display="overlay" data-theme="b" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+            <li><a href="index.html" data-transition="slide" data-direction="reverse">Home</a></li>
+            <li><a href="#" class="workouts" data-transition="none">Workouts</a></li>
+            <li><a href="#panel-fixed-page2">Playlist</a></li>
+            <li><a href="#panel-fixed-page2">RealResults</a></li>
+            <li><a href="#" class="eatwell">EatWell</a></li>
+            <li><a href="#panel-fixed-page2">Plans</a></li>
+        </ul>
+    </div><!-- /panel -->
+</div><!-- /page -->
+
+<script type="text/javascript">
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+	$.each(workouts, function(idx, value) {
+            $('div.data-list').hide();
+            $('div.data-list').append('<div class="ui-grid-solo item-list"><div class="list-container"><a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="list-item">' +
+            '<div class="list-text"><h2>'+value.title+'</h2>' +
+            '<p>'+value.tagName+'</p></div>' +
+            '<img src="'+value.photo+'" /></div></a>' +
+            '</div>').fadeIn(150);
+         });
+}    
+</script> 
+    
+</body>
+</html>

@@ -1,4 +1,4 @@
-var json = [
+var workouts = [
 
 {
 "id":"1",
@@ -60,7 +60,4 @@ var json = [
 "title":"Abslikeslabs with Weights",
 "tagName":"abslikeslabs",
 "photo":"data/workouts/img/Abslikeslabs-with-Weights-Thumbnail.jpg"
-}
-
-	
-	];
+}];

@@ -1,13 +1,18 @@
 /**
+
+
 Copyright (c) 2014 torrmal:Jorge Torres, jorge-at-turned.mobi
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
+
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -15,6 +20,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
 */
 
 try{
@@ -508,17 +514,22 @@ var ParallelAgregator = function(count, success, fail, bucket)
 }
 
 /**
+
 //TEST CODE:
 var start=	function(){
 		
+
 		//
 		//CREATE A DIRECTORY RECURSEVLY
 		var a = new DirManager(); // Initialize a Folder manager
         a.create_r('folder_a/folder_b',Log('complete/jorge'));
+
 		//LIST A DIRECTORY 
 		a.list('cosa', Log('List'));
+
         //REMOVE A DIRECTORY RECURSEVLY
         a.remove('folder_a/folder_b',Log('complete delte'), Log('delete fail'));
+
 		//
 		//FILES MANAGEMENT:
 		//
@@ -528,12 +539,14 @@ var start=	function(){
         
         // WRITE TO A FILE
         b.write_file('dira/dirb/dirc/dird','demofile_2.txt','this is demo content',Log('wrote sucessful!'));
+
         // READ A FILE
         b.read_file('dira/dirb/dirc/dird','demofile_2.txt',Log('file contents: '),Log('something went wrong'));
         
         // download a file from a remote location and store it localy
         b.download_file('http://www.greylock.com/teams/42-Josh-Elman','filder_a/dwonloads_folder/','target_name.html',Log('downloaded sucess'));
        
+
 		
 }
 document.addEventListener('deviceready', start, false);

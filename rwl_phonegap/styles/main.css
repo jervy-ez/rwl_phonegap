@@ -43,6 +43,12 @@ body
 .cw90 {width:90%;}
 .cw100 {width:100%;}
 
+
+.mar-5{ margin: 5px; }
+.mar-10{ margin: 10px; }
+.pad-5{ padding: 5px; }
+.pad-10{ padding: 10px; }
+
 /*header*/
 .header
 {
@@ -267,13 +273,72 @@ body
 	text-align: left;
 }
 
-.rwl-free-body ul.data-list li a img{
-	height: 5em !important;
- 	width: 8.875em !important;
-	max-height: 11em  !important;
-	max-width: 8.875em !important;
+.rwl-free-body .item-list .list-container{
+    position: relative;
 }
 
-.rwl-free-body ul.data-list li a.list-item{
-	padding-left: 10.25em !important;
+.rwl-free-body .item-list img{
+	width: 100%;
+}
+
+.rwl-free-body .item-list .list-text{
+    position: absolute;
+    bottom: 5px;
+    background: url('img/EC008C.png');
+    color: #fff;
+    z-index: 50;
+    font-weight: normal;
+    width: 100%;
+    padding: 10px;
+}
+
+.rwl-free-body .item-list{
+    margin-bottom: 10px;
+}
+
+.rwl-free-body .item-list .list-text h2{
+    font-size: 1.2em;
+}
+
+.rwl-free-body .item-list .list-text h2, .rwl-free-body .item-list .list-text p{
+    margin: 0;
+}
+
+.logo {
+	padding: 5px;
+	width: 7em;
+	margin: 0 auto;
+}
+
+.logo img{
+	width: 6em;
+	height: 3.313em;
+	margin: 0 auto;
+}
+
+.page-title{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #DDDDDD;
+    background: #000;
+    color: #fff;
+    margin: 0px;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.page-title p{
+    margin: 0;
+    font-weight: normal;
+}
+
+.header .head-bttns{
+	position: absolute;
+    top: 15px !important;
+    left: 5px;
+    margin: 0 !important;
+}
+
+.text-center{
+    text-align: center !important;
 }
